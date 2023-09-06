@@ -1,4 +1,5 @@
 import React from "react";
+import { formateDate } from "../../utils/formateDate";
 
 const DoctorAbout = () => {
   return (
@@ -28,13 +29,33 @@ const DoctorAbout = () => {
             Educación
         </h3>
         <ul className="pt-4 md:p-5">
-            <li className="flex flex-col sm:flex-row sm:justify-between sm:items">
+            <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
                 <div>
-                    <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">23 June, 2008</span>
-                <p>PDH en Cirujia</p>
+                    <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
+                    {formateDate("07-08-2010")} - {formateDate("09-13-2016")}
+                      </span>
+                <p className="text-[16px] leading-6 font-medium text-textColor">
+                  PDH en Cirujia</p>
                 </div>
+                <p className="text-[14px] leading-5 font-medium text-textColor">
+                  New Apollo Hospital, New York.</p>
+            </li>
+            <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
+                <div>
+                    <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
+                      {formateDate("12-04-2010")} - {formateDate("09-12-2014")}
+                      </span>
+                <p className="text-[16px] leading-6 font-medium text-textColor">
+                  PDH en Cirujia</p>
+                </div>
+                <p className="text-[14px] leading-5 font-medium text-textColor">
+                  New Apollo Hospital, New York.</p>
             </li>
         </ul>
+      </div>
+
+      <div className="mt-12">
+
       </div>
     </div>
   );
