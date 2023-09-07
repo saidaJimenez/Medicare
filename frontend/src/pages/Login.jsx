@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 const Login = () => {
-  return  <div>
-      Loging
-    </div>
+  return  <section>
+    
+  </section>
   
 }
 

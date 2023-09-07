@@ -3,6 +3,7 @@ import doctorImg from "../../assets/images/doctor-img02.png"
 import starIcon from '../../assets/images/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Comentarios from './Comentarios'
+import SidePanel from './SidePanel'
 
 
 
@@ -11,7 +12,7 @@ const DoctorDetails = () => {
 
   return <section>
     <div className='max-w-[1170px] px-5 mx-auto'>
-      <div className="grid ms:grid-cols-3 gap-[50px]">
+      <div className="grid md:grid-cols-3 gap-[50px]">
         <div className='md:col-span-2'>
           <div className='flex items-center gap-5'>
             <figure className='max-w-[200px] max-h-[200px]'>
@@ -32,21 +33,26 @@ const DoctorDetails = () => {
                   font-[400] text-textColor'>(272)</span>
                 </div>
                 <p className='text__para text-[14px] leading-6 md:text-[15px] lg:max-w-[390px]'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum perferendis ducimus minima tenetur doloribus quasi veritatis animi iure quas error earum iusto tempore sunt maxime, laudantium ipsum aut labore.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                   elit. Eius laborum perferendis ducimus minima tenetur 
+                   doloribus quasi veritatis animi iure quas error earum 
+                   iusto tempore sunt maxime, laudantium ipsum aut labore.
 
                 </p>
             </div>
           </div>
 
-            <div className='mt-[50px] border-b border-solid border-[#0066ff34 ]'>
+            <div className='mt-[50px] border-b border-solid border-[#0066ff34]'>
               <button 
               onClick={() => setTab('about')}
-              className={`${tab === "about" && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
+              className={`${tab === "about" && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] 
+              leading-7 text-headingColor font-semibold`}>
                 About
               </button>
               <button 
               onClick={() => setTab('comentarios')}
-              className={`${tab ==="comentarios" && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
+              className={`${tab ==="comentarios" && 'border-b border-solid border-primaryColor'} py-2 px-5 
+              mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
                 Comentarios
               </button>
             </div>
@@ -64,7 +70,9 @@ const DoctorDetails = () => {
 
         </div>
 
-        <div></div>
+        <div>
+          <SidePanel/>
+        </div>
       </div>
     </div>
   </section>

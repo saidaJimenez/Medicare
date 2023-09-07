@@ -1,4 +1,4 @@
-import React from "react";
+
 import { formateDate } from "../../utils/formateDate";
 
 const DoctorAbout = () => {
